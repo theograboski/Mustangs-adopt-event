@@ -1,0 +1,1 @@
+Must add /?admin=true to the URL to access admin login button
