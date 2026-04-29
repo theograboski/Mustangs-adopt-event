@@ -345,7 +345,7 @@ function App() {
                 <li>The name you would like to be associated with the donation (e.g. "The Smith Family" or "Anonymous")</li>
               </ul> 
               We will reserve your event for 24 hours while we await confirmation. 
-              Click <a href="/donation_instructions.mp4" target="_blank" rel="noopener noreferrer">
+              Click <a href="https://youtu.be/KRLC7pxliDg" target="_blank">
                 here
                 </a> to download
               a video walkthrough if you require further clarification.
