@@ -23,7 +23,7 @@ function App() {
   
   useEffect(() => {
     function fetchEvents() {
-      fetch("http://localhost:5000/api/events")
+      fetch("http://mustangs-adopt-event.onrender.com/api/events")
         .then((response) => response.json())
         .then((data) => setEventsByGender(data))
         .catch(() => console.error("Could not load events"));
@@ -79,7 +79,7 @@ function App() {
   async function continueToDonate() {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/events/${selectedEvent.id}/reserve`,
+        `http://mustangs-adopt-event.onrender.com/api/events/${selectedEvent.id}/reserve`,
         {
           method: "POST"
         }
@@ -93,7 +93,7 @@ function App() {
         return;
       }
 
-      const updatedEvents = await fetch("http://localhost:5000/api/events");
+      const updatedEvents = await fetch("http://mustangs-adopt-event.onrender.com/api/events");
       const updatedData = await updatedEvents.json();
       setEventsByGender(updatedData);
 
@@ -118,7 +118,7 @@ function App() {
   async function handleAdminAdopt(eventItem, donorName) {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/admin/adopt/${eventItem.id}`,
+        `http://mustangs-adopt-event.onrender.com/api/admin/adopt/${eventItem.id}`,
         {
           method: "POST",
           headers: {
@@ -138,7 +138,7 @@ function App() {
         return;
       }
 
-      const updated = await fetch("http://localhost:5000/api/events");
+      const updated = await fetch("http://mustangs-adopt-event.onrender.com/api/events");
       const updatedData = await updated.json();
       setEventsByGender(updatedData);
     } catch {
@@ -149,7 +149,7 @@ function App() {
   async function handleAdminAvailable(eventItem) {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/admin/available/${eventItem.id}`,
+        `http://mustangs-adopt-event.onrender.com/api/admin/available/${eventItem.id}`,
         {
           method: "POST",
           headers: {
@@ -166,7 +166,7 @@ function App() {
         return;
       }
 
-      const updated = await fetch("http://localhost:5000/api/events");
+      const updated = await fetch("http://mustangs-adopt-event.onrender.com/api/events");
       const updatedData = await updated.json();
       setEventsByGender(updatedData);
     } catch {
