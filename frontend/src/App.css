@@ -196,17 +196,20 @@ h1 {
 .modal-overlay {
   position: fixed;
   inset: 0;
+  overflow-y: auto;
   background: rgba(0, 0, 0, 0.72);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 20px;
   z-index: 1000;
 }
 
 .modal-card {
-  width: 100%;
+  width: min(900px, 95vw);
   max-width: 800px;
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
   background: linear-gradient(180deg, #26262b 0%, #1f1f23 100%);
   border: 1px solid #3a3a46;
   border-radius: 22px;
@@ -341,11 +344,6 @@ h1 {
   background: #393944;
 }
 
-.event-card:has(.status-badge.pending),
-.event-card:has(.status-badge.adopted) {
-  opacity: 0.68;
-}
-
 .status-badge.pending {
   background: rgba(255, 193, 7, 0.16);
   color: #ffd76a;
@@ -353,9 +351,9 @@ h1 {
 }
 
 .status-badge.adopted {
-  background: rgba(180, 180, 190, 0.16);
-  color: #d2d2da;
-  border: 1px solid rgba(180, 180, 190, 0.4);
+  background: rgba(46, 204, 113, 0.16);
+  color: #2ecc71;
+  border: 1px solid rgba(46, 204, 113, 0.4);
 }
 
 .admin-login {
@@ -394,7 +392,7 @@ h1 {
 
 .donor-name {
   margin: 12px 0 0;
-  color: #d8ccff;
+  color: green !important;
   font-size: 14px;
   font-weight: 600;
 }
@@ -538,4 +536,12 @@ h1 {
 
 .just-color{
   color: rgb(214, 15, 15)fff
+}
+
+.h1-color{
+  color: #ffffff
+}
+
+.link-color{
+  color: greenyellow
 }

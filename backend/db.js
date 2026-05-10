@@ -255,6 +255,37 @@ db.run(`
     recordYear: "2020"
   },
 
+  // Men - Relays
+  {
+    id: "men-4x50-free-relay",
+    westernRecord: "1:31.45",
+    recordHolder: "K. Stuckless, H. Luo, J. Waddell, L. Cappelletto",
+    recordYear: "2026"
+  },
+  {
+    id: "men-4x50-medley-relay",
+    westernRecord: "1:40.62",
+    recordHolder: "M. Klahsen, M. Loewen, S. Paulins, B. Waddell"
+  },
+  {
+    id: "men-4x100-free-relay",
+    westernRecord: "3:19.06",
+    recordHolder: "K. Stone, I. Allen, L. Stewart-Beinder, K. Stuckless",
+    recordYear: "2025"
+  },
+  {
+    id: "men-4x100-medley-relay",
+    westernRecord: "3:38.67",
+    recordHolder: "G. Barkwell, M. Loewen, G. Assaad, D. Riley",
+    recordYear: "2017"
+  },
+  {
+    id: "men-4x200-free-relay",
+    westernRecord: "7:17.56",
+    recordHolder: "C. Barnardo, R. Carswell, I. Allen, K. Stone",
+    recordYear: "2026"
+  },
+
   // Women - Freestyle
   {
     id: "women-50-free",
@@ -358,6 +389,36 @@ db.run(`
     id: "women-400-im",
     westernRecord: "4:44.88",
     recordHolder: "Jennifer McNaughton",
+    recordYear: "2014"
+  },
+  {
+    id: "women-4x50-free-relay",
+    westernRecord: "1:41.92",
+    recordHolder: "S. Hardeman, G. Casasanta, L. Butler, Z. Wetzlaugk",
+    recordYear: "2026"
+  },
+  {
+    id: "women-4x50-medley-relay",
+    westernRecord: "1:49.67",
+    recordHolder: "L. Butler, S. Branton, S. Hardeman, Z. Wetzlaugk",
+    recordYear: "2026"
+  },
+  {
+    id: "women-4x100-free-relay",
+    westernRecord: "3:44.87",
+    recordHolder: "A. Dunnington, H. Nell, A. Hutchison, A. Cooper",
+    recordYear: "2010"
+  },
+  {
+    id: "women-4x100-medley-relay",
+    westernRecord: "4:03.46",
+    recordHolder: "S. Hardeman, S. Branton, B. Johannson, Z. Wetzlaugk",
+    recordYear: "2026"
+  },
+  {
+    id: "women-4x200-free-relay",
+    westernRecord: "8:08.47",
+    recordHolder: "E. Sproule, V. Munro, K. Hotta, J. McNaughton",
     recordYear: "2014"
   }
 ];

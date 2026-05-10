@@ -201,7 +201,7 @@ function App() {
     <div className="app">
       <header className="hero">
         <p className="eyebrow">Western Mustangs Swimming</p>
-        <h1>Adopt An Event Fundraiser
+        <h1 className = "h1-color">Adopt An Event Fundraiser
         </h1>
         <p className="subtitle">
           <br></br>Go above and beyond supporting Western Mustangs Swimming by adopting an
@@ -320,7 +320,7 @@ function App() {
       {selectedEvent && (
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-card" onClick={(event) => event.stopPropagation()}>
-            <h2>{selectedEvent.name}</h2>
+            <h2 className = "h1-color">{selectedEvent.name}</h2>
               <h4 className="western-record">
                 ⚡⚡⚡ Western Record: <strong>{selectedEvent.westernRecord}</strong>
                 {selectedEvent.recordHolder && <> by {selectedEvent.recordHolder}</>}
@@ -349,7 +349,7 @@ function App() {
                 <li>The name you would like to be associated with the donation (e.g. "The Smith Family" or "Anonymous")</li>
               </ul> 
               We will reserve your event for 24 hours while we await confirmation. 
-              Click <a href="https://youtu.be/KRLC7pxliDg" target="_blank">
+              Click <a href="https://youtu.be/KRLC7pxliDg" target="_blank" className = "link-color">
                 here
                 </a> to view
               a video walkthrough if you require further clarification. Note that this single purchase gives you ownership of the event
@@ -381,7 +381,7 @@ function App() {
       {unavailableEvent && (
         <div className="modal-overlay" onClick={() => setUnavailableEvent(null)}>
           <div className="modal-card" onClick={(event) => event.stopPropagation()}>
-            <h2>{unavailableEvent.name} is not available</h2>
+            <h2 className = "h1-color">{unavailableEvent.name} is not available</h2>
 
             <p className="modal-text">
               This event is currently pending or has already been adopted. Please choose
@@ -417,7 +417,7 @@ function App() {
       {adminSelectedEvent && (
         <div className="modal-overlay" onClick={() => setAdminSelectedEvent(null)}>
           <div className="modal-card" onClick={(event) => event.stopPropagation()}>
-            <h2>Admin: {adminSelectedEvent.name}</h2>
+            <h2 className = "h1-color">Admin: {adminSelectedEvent.name}</h2>
             <p className="modal-text">
               Current status: <strong>{adminSelectedEvent.status}</strong>
             </p>
@@ -470,10 +470,10 @@ function App() {
         </p>
 
         <p className="footer-email">
-          Email: <a href="mailto:tgrabosk@uwo.ca">tgrabosk@uwo.ca</a>
+          Email: <a href="mailto:tgrabosk@uwo.ca" className = "link-color">tgrabosk@uwo.ca</a>
         </p>
 
-        <p>Accidentally closed the offical page? Click <a href="https://www.westernconnect.ca/site/SPageNavigator/donation/giveAthletics.html?designee=2531&s_src=WB&s_subsrc=FY2526MAYATHQ1OMWBMUSXXXALOW1&utm_source=web&utm_medium=mustangs&utm_campaign=organic&utm_id=ath_25">here</a></p>
+        <p>Accidentally closed the offical page? Click <a href="https://www.westernconnect.ca/site/SPageNavigator/donation/giveAthletics.html?designee=2531&s_src=WB&s_subsrc=FY2526MAYATHQ1OMWBMUSXXXALOW1&utm_source=web&utm_medium=mustangs&utm_campaign=organic&utm_id=ath_25" className = "link-color">here</a></p>
 
         <p className="footer-note">
           Please include the event name in your message so we can confirm your adoption.
