@@ -90,7 +90,10 @@ app.get("/api/events", (req, res) => {
             price: row.price,
             status: row.status,
             reservedUntil: row.reserved_until,
-            donorName: row.donor_name
+            donorName: row.donor_name,
+            westernRecord: row.western_record,
+            recordHolder: row.record_holder,
+            recordYear: row.record_year
           });
         });
 

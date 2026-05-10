@@ -7,7 +7,7 @@ import laneRight from "./assets/lane-right.jpg";
 
 
 const donationUrl =
-  "https://www.westernconnect.ca/site/SPageNavigator/donation/giveAthletics.html";
+  "https://www.westernconnect.ca/site/SPageNavigator/donation/giveAthletics.html?designee=2531&s_src=WB&s_subsrc=FY2526MAYATHQ1OMWBMUSXXXALOW1&utm_source=web&utm_medium=mustangs&utm_campaign=organic&utm_id=ath_25";
 
 function App() {
   const [selectedGender, setSelectedGender] = useState("men");
@@ -245,11 +245,10 @@ function App() {
             <h2>A Message from Head Coach Paul</h2>
 
             <p className="coach-text">
-              (Placeholder message) On behalf of the Western Mustangs Swimming program, thank you for your
-              support. Your contributions help provide our athletes with opportunities
-              that go far beyond the pool — from training camps to competition travel
-              and everything in between. Continued placholder placholder placholder placholder
-              placholder placholder placholder placholder.
+              Dear Western Swimming Parents, Alumni, and Supporters <br></br><br></br>
+              On behalf of the Western Mustangs Varsity Swim Team, I would like to extend a sincere thank you for your continued support of our program.
+              A successful varsity program is built on more than hard work and training hours alone. The generosity of our donors helps to provide opportunities and resources that allow our swimmers to represent Western at the highest level. Your support directly contributes to our training camps, recruiting, scholarships, and championship experiences that strengthen our program and support our student-athletes.
+              <br></br><br></br>The Mustang Adopt an Event initiative is a meaningful way to invest in the future of our program as we prepare to host the 2027 Merrily Stratten Divisional Championships. Your support will make a lasting difference for our athletes and for Western Swimming as a whole.
             </p>
             <p className="coach-signoff">
               Paul Midgley
@@ -319,6 +318,11 @@ function App() {
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-card" onClick={(event) => event.stopPropagation()}>
             <h2>{selectedEvent.name}</h2>
+              <h4 className="western-record">
+                Western Record: <strong>{selectedEvent.westernRecord}</strong>
+                {selectedEvent.recordHolder && <> by {selectedEvent.recordHolder}</>}
+                {selectedEvent.recordYear && <>, {selectedEvent.recordYear}</>}
+              </h4>
             <p className="modal-price">${selectedEvent.price}</p>
 
             <p className="modal-text">
@@ -333,7 +337,7 @@ function App() {
               <li>
                 Relay events are <strong>$1000</strong> using <strong>Other Amount</strong>
               </li>
-              <li>Select <strong>Swimming</strong> as the area of support</li>
+              <li>The area of support will be <strong>swimming</strong> by default</li>
               <li>Complete your contact information accurately</li>
             </ul>
 
@@ -347,7 +351,7 @@ function App() {
               We will reserve your event for 24 hours while we await confirmation. 
               Click <a href="https://youtu.be/KRLC7pxliDg" target="_blank">
                 here
-                </a> to download
+                </a> to view
               a video walkthrough if you require further clarification.
               On a separate note, Western will send you an official
               tax receipt shortly after your donation as well. Cheers!
@@ -471,7 +475,7 @@ function App() {
           Email: <a href="mailto:tgrabosk@uwo.ca">tgrabosk@uwo.ca</a>
         </p>
 
-        <p>Accidentally closed the offical page? Click <a href="https://www.westernconnect.ca/site/SPageNavigator/donation/giveAthletics.html">here</a></p>
+        <p>Accidentally closed the offical page? Click <a href="https://www.westernconnect.ca/site/SPageNavigator/donation/giveAthletics.html?designee=2531&s_src=WB&s_subsrc=FY2526MAYATHQ1OMWBMUSXXXALOW1&utm_source=web&utm_medium=mustangs&utm_campaign=organic&utm_id=ath_25">here</a></p>
 
         <p className="footer-note">
           Please include the event name in your message so we can confirm your adoption.

@@ -528,3 +528,10 @@ h1 {
   background: linear-gradient(90deg, #8f6fff, #cbb6ff);
   border-radius: 999px;
 }
+
+.western-record {
+  margin: 8px 0 14px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+}
