@@ -204,9 +204,12 @@ function App() {
         <h1>Adopt An Event Fundraiser
         </h1>
         <p className="subtitle">
-          Go above and beyond supporting Western Mustangs Swimming by adopting an
-          event. All funds go directly towards supporting our athletes and
-          program, helping us achieve our goals in and out of the pool.
+          <br></br>Go above and beyond supporting Western Mustangs Swimming by adopting an
+          event. The Mustangs Adopt an Event initiative gives you the opportunity to sponsor an event of your choice,
+          with all funds going directly towards supporting our athletes.<br></br><br></br>
+          Events can be sponsored by an individual, or a group of sponsors. 
+          All event sponsors will be recognized through web publications, a donation board being posted on the pool deck, 
+          in physical events programs, and through name announcements at championship meets.
         </p>
         
         {isAdmin && (
@@ -319,9 +322,9 @@ function App() {
           <div className="modal-card" onClick={(event) => event.stopPropagation()}>
             <h2>{selectedEvent.name}</h2>
               <h4 className="western-record">
-                Western Record: <strong>{selectedEvent.westernRecord}</strong>
+                ⚡⚡⚡ Western Record: <strong>{selectedEvent.westernRecord}</strong>
                 {selectedEvent.recordHolder && <> by {selectedEvent.recordHolder}</>}
-                {selectedEvent.recordYear && <>, {selectedEvent.recordYear}</>}
+                {selectedEvent.recordYear && <>, {selectedEvent.recordYear}</>} ⚡⚡⚡
               </h4>
             <p className="modal-price">${selectedEvent.price}</p>
 
@@ -332,17 +335,14 @@ function App() {
 
             <ul className="modal-list">
               <li>
-                Individual events are <strong>$500</strong>
+                This event costs $<strong>{selectedEvent.price}</strong>
               </li>
-              <li>
-                Relay events are <strong>$1000</strong> using <strong>Other Amount</strong>
-              </li>
-              <li>The area of support will be <strong>swimming</strong> by default</li>
-              <li>Complete your contact information accurately</li>
+              <li>The area of support should be <strong>swimming</strong></li>
+              <li>Complete your contact information accurately so Western can send you a tax receipt!</li>
             </ul>
 
             <p className="modal-text">
-              <strong>After </strong> completing your donation, please send a confirmation to <strong>tgrabosk@uwo.ca</strong> with
+              <strong className = "just-color">After completing your donation, please send a confirmation to tgrabosk@uwo.ca</strong> that includes the following:
               <ul className="modal-list">
                 <li>The event name "{selectedEvent.name}"</li>
                 <li> A <strong>screenshot</strong> of your transaction summary</li>
@@ -352,13 +352,11 @@ function App() {
               Click <a href="https://youtu.be/KRLC7pxliDg" target="_blank">
                 here
                 </a> to view
-              a video walkthrough if you require further clarification.
-              On a separate note, Western will send you an official
-              tax receipt shortly after your donation as well. Cheers!
+              a video walkthrough if you require further clarification. Note that this single purchase gives you ownership of the event
+              for 2 full years!
             </p>
             <p><strong>DO NOT include screenshots of any credit card info!</strong>
-            </p>
-            <p>*****************************************************************</p>
+            </p><br></br>
 
             <div className="modal-actions">
               <label className="confirm-checkbox">
@@ -465,7 +463,7 @@ function App() {
     </div>
     <footer className="footer">
       <div className="footer-content">
-        <p className="footer-title">Western Mustangs Swimming</p>
+        <p className="footer-title"><br></br>Western Mustangs Swimming</p>
 
         <p className="footer-text">
           Questions or donation confirmations?
