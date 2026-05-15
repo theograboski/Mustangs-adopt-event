@@ -274,6 +274,9 @@ function App() {
             ></div>
           </div>
         </section>
+        <div><p className = "link-color">NOTE ON GROUP ADOPTIONS <br></br><br></br>If you wish to adopt an event as a group (e.g. Class of 2013),
+          don't worry about using this website to reserve your event. Please just contact me directly at tgrabosk@uwo.ca,
+          I'll reserve your event for you and we can sort out the payment process tidily!</p></div>
         <section className="toggle-bar">
           <label htmlFor="gender-select">View events for  </label>
           <select className="toggle-select"
@@ -322,9 +325,9 @@ function App() {
           <div className="modal-card" onClick={(event) => event.stopPropagation()}>
             <h2 className = "h1-color">{selectedEvent.name}</h2>
               <h4 className="western-record">
-                ⚡⚡⚡ Western Record: <strong>{selectedEvent.westernRecord}</strong>
+                ⚡ Western Record: <strong>{selectedEvent.westernRecord}</strong>
                 {selectedEvent.recordHolder && <> by {selectedEvent.recordHolder}</>}
-                {selectedEvent.recordYear && <>, {selectedEvent.recordYear}</>} ⚡⚡⚡
+                {selectedEvent.recordYear && <>, {selectedEvent.recordYear}</>} ⚡
               </h4>
             <p className="modal-price">${selectedEvent.price}</p>
 
@@ -384,10 +387,10 @@ function App() {
             <h2 className = "h1-color">{unavailableEvent.name} is not available</h2>
 
             <p className="modal-text">
-              This event is currently pending or has already been adopted. Please choose
-              another available event below.
+              This event is currently pending or has already been adopted, please choose an available event.
+              Remember there are events available on both the Women's and Men's side! 
             </p>
-
+            {/*
             <div className="alternative-list">
               {getAlternativeEvents(unavailableEvent).map((eventItem) => (
                 <button
@@ -401,7 +404,7 @@ function App() {
                   {eventItem.name} — ${eventItem.price}
                 </button>
               ))}
-            </div>
+            </div> */}
 
             <div className="modal-actions">
               <button
